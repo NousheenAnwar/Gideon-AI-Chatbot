@@ -53,3 +53,4 @@ export async function POST(req) {
 }
 
 export const runtime = "edge";
+export const dynamic = 'force-dynamic';
