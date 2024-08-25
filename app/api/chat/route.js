@@ -42,9 +42,7 @@ export async function POST(req) {
     });
 
     // Return the response as a stream
-    return new NextResponse(stream, {
-      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
-    });
+    return new NextResponse(stream);
 
   } catch (error) {
     console.error('Error:', error);
@@ -53,4 +51,3 @@ export async function POST(req) {
 }
 
 export const runtime = "edge";
-export const dynamic = 'force-dynamic';
